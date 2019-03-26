@@ -31,18 +31,18 @@ Additionally you will be provided with the unit tests to test your code.
 camelCase for variables, _camelCase for data members, SNAKE_CASE for constants), header comments, correct file names, etc. Failure to 
 code appropriate will result in strong points penalization.
 - You will need to provide implementation of the following methods:
-	a. Destructor
-	b. Copy Assignment operator overload
-	c. Subtract
-	d. Multiply
-	e. Minus
-	f. Derive
-	g. Evaluate
-	h. ToString
-	i. Read (returns the `istream` parameter, first reads the degree and then degree + 1 floats for the coefficients)
-	g. Write (returns the `ostream` parameter)
+  a. Destructor
+  b. Copy Assignment operator overload
+  c. Subtract
+  d. Multiply
+  e. Minus
+  f. Derive
+  g. Evaluate
+  h. ToString
+  i. Read (returns the `istream` parameter, first reads the degree and then degree + 1 floats for the coefficients)
+  j. Write (returns the `ostream` parameter)
 - The following methods will count toward extra credit, some code will be provided to guarantee compilation:
-	a. Divide
-	b. Integrate
+  a. Divide
+  b. Integrate
 
 
