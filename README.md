@@ -20,7 +20,7 @@ would be:
 Notice that the array size is `_degree + 1`.
 
 ## What is given?
-You will be provided with the code of the constructors the Sum and ToString methods
+You will be provided with the code of the constructors, the ToString, Minus, Assignment Operator, Read and Write  methods
 the rest of the methods you will implement yourself.
 Additionally you will be provided with the unit tests to test your code.
 
@@ -32,15 +32,12 @@ camelCase for variables, _camelCase for data members, SNAKE_CASE for constants),
 code appropriate will result in strong points penalization.
 - You will need to provide implementation of the following methods:
   1. Destructor
-  2. Copy Assignment operator overload
+  2. Add
   3. Subtract
   4. Multiply
-  5. Minus
-  6. Derive
-  7. Evaluate
-  8. ToString
-  9. Read (returns the `istream` parameter, first reads the degree and then degree + 1 floats for the coefficients)
-  10. Write (returns the `ostream` parameter)
+  5. Derive
+  6. Evaluate
+  7. ToString
 - The following methods will count toward extra credit, some code will be provided to guarantee compilation:
   1. Divide
   2. Integrate
