@@ -37,7 +37,6 @@ code appropriate will result in strong points penalization.
   4. Multiply
   5. Derive
   6. Evaluate
-  7. ToString
 - The following methods will count toward extra credit, some code will be provided to guarantee compilation:
   1. Divide
   2. Integrate
