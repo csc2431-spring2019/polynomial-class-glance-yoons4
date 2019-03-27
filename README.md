@@ -20,7 +20,7 @@ would be:
 Notice that the array size is `_degree + 1`.
 
 ## What is given?
-You will be provided with the code of the constructors, the ToString, Minus, Assignment Operator, Read and Write  methods
+You will be provided with the code of the constructors, the ToString, Minus, Assignment Operator, Equals, Read and Write  methods
 the rest of the methods you will implement yourself.
 Additionally you will be provided with the unit tests to test your code.
 

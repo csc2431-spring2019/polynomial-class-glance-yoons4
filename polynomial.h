@@ -25,6 +25,7 @@ public:
 	float Integrate(float, float)const;
 	const Polynomial& operator=(const Polynomial&);
 	string ToString()const;
+	bool Equals(const Polynomial&)const;
 	ostream& Write(ostream&)const;
 	istream& Read(istream&);
 
