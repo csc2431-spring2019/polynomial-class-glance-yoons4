@@ -1,5 +1,4 @@
 #include "polynomial.h"
-//Xomnird
 #include <iostream>
 #include <string>
 #include <sstream>
