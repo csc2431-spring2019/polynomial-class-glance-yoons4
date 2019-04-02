@@ -17,7 +17,7 @@ int main(int argc, char* argv[]){
 
 	stringstream answers[6];
 	answers[0].str("4 -2 0 0 -2.5 3"); // a + b
-	answers[1].str("7 1 0 -4 2.5 2 6 0 -7.5"); // a * b
+	answers[1].str("7 1 0 -4 2.5 2 6 0 0 -7.5"); // a * b
 	answers[2].str("2 3 4 1"); // d / e
 	answers[3].str("2 1 0 -4"); // -c
 	answers[4].str("4 0 -4 0 2.5 3"); // b - a

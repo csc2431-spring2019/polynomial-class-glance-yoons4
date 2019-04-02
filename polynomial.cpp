@@ -35,12 +35,14 @@ Polynomial::Polynomial(const Polynomial& polynomial): _degree(polynomial._degree
 }
 Polynomial::~Polynomial(){
 	// DO THIS FIRST TO PREVENT MEMORY LEAKS!
+    
 }
 const Polynomial Polynomial::Sum(const Polynomial& rhs)const{
-	return Polynomial(0);
+	//return Polynomial(0);
+    
 }
 const Polynomial Polynomial::Subtract(const Polynomial& rhs)const{
-	return Polynomial(0);
+	//return Polynomial(0);
 }
 const Polynomial Polynomial::Minus()const{
 	Polynomial retVal(*this);
