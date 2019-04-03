@@ -1,5 +1,6 @@
 #include "polynomial.h"
 #include <iostream>
+#include <cmath>
 #include <string>
 #include <sstream>
 #include <iomanip>
@@ -65,8 +66,9 @@ const Polynomial Polynomial::Minus()const{
 const Polynomial Polynomial::Multiply(const Polynomial& rhs)const{
     Polynomial multipliedValue(*this);
     int z = 0; //The variable represents results by the multiplication of two polynomials.
-    float coefficientNumber[z]; //The variable for representing only coefficient on each variable.
-    int degreeNumber[z]; //The variable for representing only degree on each variable.
+    float coefficientNumber = new float* [z]; //The variable for representing only coefficient on each variable.
+    int degreeNumber = new int* [z]; //The variable for representing only degree on each variable.
+    
     for (size_t i = 0; i < _degree + 1; i++){
         for(size_t j = 0; j < rhs._degree + 1; j++){
             coefficientNumber[z] = multipliedValue._coefficients[i] * rhs._coefficients[j];
@@ -131,7 +133,7 @@ const Polynomial Polynomial::Derive()const{
 float Polynomial::Evaluate(float x)const{
     float resultAnswer = 0;
     for(size_t i = 0; i < _degree + 1; i++){
-        resultAnswer += ((x^i)*_coefficients[i]);
+        resultAnswer += pow(x,i) * _coefficients[i];
     }
     return resultAnswer;
 }
@@ -143,14 +145,14 @@ float Polynomial::Integrate(float start, float end)const{
     for (size_t i = 0; i < _degree + 1; i++){
         i += 1;
         _coefficients[i] /= i;
-        resultStart += ((start^i)* _coefficients[i]);
+        resultStart += pow(start,i) * _coefficients[i];
     }
     
     //For higher point for function
     for (size_t i = 0; i < _degree + 1; i++){
         i += 1;
         _coefficients[i] /= i;
-        resultEnd += ((end^i)* _coefficients[i]);
+        resultEnd += pow(end,i) * _coefficients[i];
     }
     float totalResult = resultEnd - resultStart;
     return totalResult;
